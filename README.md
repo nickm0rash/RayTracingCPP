@@ -9,4 +9,4 @@ About 20% complete...
 
 # External Sources
 "Ray Tracing In One Weekend" - Peter Shirley - https://raytracing.github.io/books/RayTracingInOneWeekend.html \
-"Fundementals of Computer Graphics 4th ed. Peter Shirley, Steve Marschner
+"Fundementals of Computer Graphics" (4th ed.) - Peter Shirley, and Steve Marschner
