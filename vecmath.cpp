@@ -16,24 +16,30 @@ Vec3::Vec3() : x(0), y(0), z(0) {}
 Vec3::Vec3(float xx, float yy, float zz) : x(xx), y(yy), z(zz) {}
 
 //Vector addition.
-void Vec3::add(Vec3 v) {
-    x = x + v.x;
-    y = y + v.y;
-    z = z + v.z;
+Vec3 Vec3::add(Vec3 v) {
+    float xx = x + v.x;
+    float yy = y + v.y;
+    float zz = z + v.z;
+    Vec3 sum = Vec3(xx, yy, zz);
+    return sum;
 }
 
 //Vector subtraction.
-void Vec3::sub(Vec3 v) {
-    x = x - v.x;
-    y = y - v.y;
-    z = z - v.z;
+Vec3 Vec3::sub(Vec3 v) {
+    float xx = x - v.x;
+    float yy = y - v.y;
+    float zz = z - v.z;
+    Vec3 diff = Vec3(xx, yy, zz);
+    return diff;
 }
 
 //Vector multiplication (scalar).
-void Vec3::scale(float s) {
-    x = s * x;
-    y = s * y;
-    z = s * z; 
+Vec3 Vec3::scale(float s) {
+    float xx = s * x;
+    float yy = s * y;
+    float zz = s * z;
+    Vec3 scaled = Vec3(xx, yy, zz);
+    return scaled;
 }
 
 //Vector norm.
@@ -43,11 +49,13 @@ float Vec3::magnitude() {
 }
 
 //Vector normalization.
-void Vec3::normalize() {
+Vec3 Vec3::normalize() {
     float m = std::sqrt((x * x) + (y * y) + (z * z));
-    x = x / m;
-    y = y / m;
-    z = z / m;
+    float xx = x / m;
+    float yy = y / m;
+    float zz = z / m;
+    Vec3 normalized = Vec3(xx, yy, zz);
+    return normalized;
 }
 
 //Dot product.
