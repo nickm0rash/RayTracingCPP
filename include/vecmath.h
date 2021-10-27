@@ -4,31 +4,35 @@
 #ifndef __VECMATH__
 #define __VECMATH__
 
-class Vec3 {
+class Vec3 { 
     public:
+        //Structure
         float x;
         float y;
         float z;
 
-        //basic structure
+        //Constructors
         Vec3();
         Vec3(float xx, float yy, float zz);
-        
         //Vector addition/subtraction.
-        void add(Vec3 v);
-        void sub(Vec3 v);
+        Vec3 add(Vec3 v);
+        Vec3 sub(Vec3 v);
         
         //Scalar multiplication.
-        void scale(float s);
+        Vec3 scale(float s);
         
         //Norm
         float magnitude();
         
         //Normalize
-        void normalize();
+        Vec3 normalize();
         
         //Dot product.
         float dot(Vec3 v);
 };
+
+//Aliases
+using RGB = Vec3;   //color (R, G, B)
+using point = Vec3; //Helpful for visualizing rays and intercepts.
 
 #endif
