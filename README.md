@@ -12,7 +12,7 @@ About 30% complete...
 -- https://raytracing.github.io/books/RayTracingInOneWeekend.html \
 "Fundementals of Computer Graphics" (4th ed.) - Peter Shirley, and Steve Marschner \
 
-"Introduction to Shading Normals" \ 
+"Introduction to Shading Normals"\
 -- https://www.scratchapixel.com/lessons/3d-basic-rendering/introduction-to-shading/shading-normals \
 "Reflection, Refraction (Transmission) and Fresnel" \
 -- https://www.scratchapixel.com/lessons/3d-basic-rendering/introduction-to-shading/reflection-refraction-fresnel \
