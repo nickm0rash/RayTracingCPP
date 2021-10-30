@@ -11,4 +11,4 @@ project(RayTracingCPP
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-add_executable(raytracer main.cpp output.cpp vecmath.cpp ray.cpp)
+add_executable(raytracer main.cpp output.cpp vecmath.cpp ray.cpp sphere.cpp material.cpp cam.cpp)
