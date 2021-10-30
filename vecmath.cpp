@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////
-// vecmath.cpp                                          //
-// Simple vector utility fucntions.                     //
+// vecmath.cpp  / vecmath.h                             //
+// Simple vector utility functions.                     //
 // Nicholas Morash - A00378981 - nicholas.morash@smu.ca //
 //////////////////////////////////////////////////////////
 
@@ -33,6 +33,15 @@ Vec3 Vec3::sub(Vec3 v) {
     return diff;
 }
 
+Vec3 Vec3::times(Vec3 v)
+{
+    float xx = x * v.x;
+    float yy = y * v.y;
+    float zz = z * v.z;
+    Vec3 product = Vec3(xx, yy, zz);
+    return product;
+}
+
 //Vector multiplication (scalar).
 Vec3 Vec3::scale(float s) {
     float xx = s * x;
@@ -62,4 +71,13 @@ Vec3 Vec3::normalize() {
 float Vec3::dot(Vec3 v) {
     float d = ((x * v.x) + (y * v.y) + (z * v.z));
     return d;
+}
+
+Vec3 Vec3::cross(Vec3 v)
+{
+    float xx = (y * v.z) - (z * v.y);
+    float yy = (z * v.x) - (x * v.z);
+    float zz = (x * v.y) - (y * v.x);
+    Vec3 cross = Vec3(xx, yy, zz);
+    return cross;
 }

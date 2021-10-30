@@ -17,6 +17,7 @@ class Vec3 {
         //Vector addition/subtraction.
         Vec3 add(Vec3 v);
         Vec3 sub(Vec3 v);
+        Vec3 times(Vec3 v);
         
         //Scalar multiplication.
         Vec3 scale(float s);
@@ -29,6 +30,9 @@ class Vec3 {
         
         //Dot product.
         float dot(Vec3 v);
+
+        //Cross product.
+        Vec3 cross(Vec3 v);
 };
 
 //Aliases
